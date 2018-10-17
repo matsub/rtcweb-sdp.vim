@@ -1,7 +1,6 @@
-if exists("b:rtcwebSDP_syntax")
+if exists("b:current_syntax")
   finish
 endif
-let b:rtcwebSDP_syntax = 1
 
 setlocal foldmethod=syntax
 
@@ -44,3 +43,5 @@ highlight link rtcwebSDPAttrKeyword Keyword
 " -------------------------
 syntax keyword rtcwebSDPCandidateKeyword host srflx prflx relay
 highlight link rtcwebSDPCandidateKeyword Statement
+
+let b:current_syntax = "rtcweb-sdp"
